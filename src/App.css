@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+
+/* 
+To install material-ui
+
+From root directory - npm install @material-ui/core --legacy-peer-deps
+
+From project directory For Styles - npm install @mui/material @emotion-react @emotion/styled --legacy-peer-deps
+
+From project directory For Icons - npm install @mui/icons-material --legacy-peer-deps 
+*/
+
+/* 
+import React from 'react';
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+
+export default function Navbar() {
+
+    return (
+        <nav className="navbar">
+            <div className="header">
+                <div className="leftSideTitle">
+                <h1 className="title">MovieDb</h1>
+                </div>
+                <div className="rightMenusContainer">
+                    <ul className="menuContainer">
+                        <li className="menus">
+                            <Link to="/">Popular</Link>
+                        </li>
+                        <li className="menus">
+                            <Link to="/TopRated">Top Rated</Link>
+                        </li>
+                        <li className="menus">
+                            <Link to="/Upcoming">Upcoming</Link>
+                        </li>
+                    </ul>
+                    <input className="searchBox searchContainer" type="text" placeholder="Movie Name" />
+                    <button className="searchBox" id="searchButton" >Search</button>
+                    <MenuRoundedIcon />
+                </div>
+            </div>
+        </nav>
+    )
+}
+
+// https://api.themoviedb.org/3/movie/popular?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&page=1
+
+*/

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #282B34;
+}
+
+.topRatedMoviesContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-top: 4rem;
+}
+
+
+.topRatedMovieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.topRatedMovieTitle {
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.2rem;
+    width: 13rem;
+}
+
+.topRatedMovieRating {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin-top: 0rem;
+}
+
+@media only screen and (max-width: 575px) {
+    .topRatedMoviesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .topRatedMoviesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .topRatedMoviesContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
+    .topRatedMoviesContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .topRatedMoviePoster {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .topRatedMoviesContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .topRatedMoviePoster {
+        width: 60%;
+        height: 70%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .popularMoviesContainer {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

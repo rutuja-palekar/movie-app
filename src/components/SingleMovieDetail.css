@@ -1,0 +1,14 @@
+.singleMovieDetailContainer {
+    margin: 0;
+    padding: 0;
+}
+
+.singleMovieDetailCard {
+    height: 25rem;
+    width: 80rem;
+    background-color: #010B17;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
